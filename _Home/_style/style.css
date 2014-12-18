@@ -1,0 +1,83 @@
+.template {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 122px;
+    background: #c1c1c1;
+}
+
+/** ----- Selecteur ----- **/
+/** ----- Selecteur ----- **/
+/** ----- Selecteur ----- **/
+/** ----- Selecteur ----- **/
+
+.selection {
+    text-align: center;
+    position: relative;
+    height: 568px;
+}
+
+.selection__selecteur {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -143px;
+}
+
+.selection__selecteur--sexe {
+    width: 75px;
+    height: 75px;
+    background-image: url(../_img/interrogation.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.selection__selecteur--sexe:focus{
+    background: red;
+    background-image: url(../_img/interrogation.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.selection__selecteur--choix {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    position: relative;
+    top: -30px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+a.selection__valider {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    background: #403e3e;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: -52px;
+    left: 50%;
+    top: 65%;
+}
+
+a.selection__valider:hover
+
+
+
+/** ----- Fin Selecteur ----- **/
+/** ----- Fin Selecteur ----- **/
+/** ----- Fin Selecteur ----- **/
+/** ----- Fin Selecteur ----- **/
