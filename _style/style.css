@@ -1,9 +1,8 @@
-img.template {
+.template {
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -200px;
-    z-index: 0;
 }
 
 .container {
@@ -11,5 +10,4 @@ img.template {
     height: 568px;
     margin: 0 auto;
     margin-top: 122px;
-    z-index: 99999;
 }
