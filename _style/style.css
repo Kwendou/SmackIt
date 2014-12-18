@@ -1,10 +1,15 @@
-body {
-    background: black;
+img.template {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 0;
 }
 
 .container {
     width: 320px;
     height: 568px;
-    background: white;
     margin: 0 auto;
+    margin-top: 122px;
+    z-index: 99999;
 }
