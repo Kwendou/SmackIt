@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="_style/reset.css">
-        <link rel="stylesheet" href="_style/style.css">
-        <meta name="description" content="">
-        <meta content="yes" name="apple-mobile-web-app-capable"/>
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="viewport" content="user-scalable=no, initial-scale=1.0">
-       
-        <meta name="mobile-web-app-capable" content="yes">
-        
-    </head>
-    <body>
-        
-       <div class="container">
-           
-            <section class="home">
+<section class="home">
                 
                 <div class="header">
                     
-                    <h1 class="header__titre">smack it !</h1>
+                    <h1 class="header__titre">co-pilote</h1>
                     
                     <p class="header__baseLine">C'est tellement nul que ça peut marcher</p>
                     
@@ -45,9 +26,4 @@
                     
                 </div>
                 
-            </section>
-            
-       </div>
-       
-    </body>
-</html>
+</section>
