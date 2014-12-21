@@ -14,15 +14,7 @@
         
     </head>
     <body>
-        <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
-    <activity android:label="@string/app_name" android:name=".Phonegap_AppName"
-        android:configChanges="orientation|keyboardHidden" android:screenOrientation="portrait">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-</application>
+      
        <div class="container">
        
            <?php include("_pages/menu.php"); ?>
