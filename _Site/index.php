@@ -2,19 +2,27 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Smack it!</title>
         <link rel="stylesheet" href="_style/reset.css">
         <link rel="stylesheet" href="_style/style.css">
         <meta name="description" content="">
         <meta content="yes" name="apple-mobile-web-app-capable"/>
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="viewport" content="user-scalable=no, initial-scale=1.0">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
        
         <meta name="mobile-web-app-capable" content="yes">
         
     </head>
     <body>
-        
+        <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+    <activity android:label="@string/app_name" android:name=".Phonegap_AppName"
+        android:configChanges="orientation|keyboardHidden" android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
        <div class="container">
        
            <?php include("_pages/menu.php"); ?>
@@ -22,6 +30,10 @@
            <?php include("_pages/home.php"); ?>
        
        </div>
+       
+       <script src="_js/Jquery.js"></script>
+       
+       <script src="_js/main.js"></script>
        
     </body>
 </html>

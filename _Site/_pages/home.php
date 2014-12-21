@@ -2,7 +2,7 @@
                 
                 <div class="header">
                     
-                    <h1 class="header__titre">co-pilote</h1>
+                    <h1 class="header__titre">smack it!</h1>
                     
                     <p class="header__baseLine">C'est tellement nul que ça peut marcher</p>
                     
