@@ -92,6 +92,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 .nav__el {
@@ -122,3 +123,93 @@ body {
 /** ----- Fin Nav ----- **/
 /** ----- Fin Nav ----- **/
 /** ----- Fin Nav ----- **/
+
+
+/** ----- Open/Close page ----- **/
+/** ----- Open/Close page ----- **/
+/** ----- Open/Close page ----- **/
+/** ----- Open/Close page ----- **/
+
+.openPage {
+    -webkit-animation: open .5s linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: .3s;
+}
+
+.closePage {
+    -webkit-animation: close .2s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/** ----- Fin Open/Close page ----- **/
+/** ----- Fin Open/Close page ----- **/
+/** ----- Fin Open/Close page ----- **/
+/** ----- Fin Open/Close page ----- **/
+
+
+/** ----- Challenge choix ----- **/
+/** ----- Challenge choix ----- **/
+/** ----- Challenge choix ----- **/
+/** ----- Challenge choix ----- **/
+
+
+.challenge {
+    height: 100%;
+    background: #c1c1c1; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.62);
+    -webkit-transform : translateX(120%);
+}
+
+.challenge__quote {
+    height: 350px;
+    position: relative;
+}
+
+.quote p {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 10px;
+    margin-left: -160px;
+    width: 300px;
+}
+
+.challenge__button {
+    font-size: 20px;
+    position: absolute;
+    margin-left: -107.5px;
+    bottom: 130px;
+    left: 50%;
+    
+}
+
+.challenge__button a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    background: #272727;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.challenge__button--target a {
+    background: #969696;
+}
+
+@-webkit-keyframes open {
+    0% {-webkit-transform: translateX(120%);}
+    100% {-webkit-transform: translateX(0%);}
+}
+
+@-webkit-keyframes close {
+    0% {-webkit-transform: translateX(0%);}
+    100% {-webkit-transform: translateX(120%);}
+}
+
+
+/** ----- Fin Challenge choix ----- **/
+/** ----- Fin Challenge choix ----- **/
+/** ----- Fin Challenge choix ----- **/
+/** ----- Fin Challenge choix ----- **/

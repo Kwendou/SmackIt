@@ -20,6 +20,8 @@
            <?php include("_pages/menu.php"); ?>
            
            <?php include("_pages/home.php"); ?>
+           
+           <?php include("_pages/challenge.php"); ?>
        
        </div>
        
