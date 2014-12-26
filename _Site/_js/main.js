@@ -8,7 +8,7 @@ $ ( ".selecteur__nav--element" ).click (function (){
  });
 
 jQuery(function(){
-      jQuery(".challenge__randomText--el").each(function(){
+      jQuery(".quote").each(function(){
          jQuery(this).find("span:eq("+Math.floor(Math.random()*jQuery(this).find("span").length)+")").css("display","inline");
       });
    });
@@ -46,7 +46,6 @@ $(document).ready(function() {
                            "<p>Je te paie un café ou on s'embrasse ? mais je t'avoue que là j'ai pas soif !</p>",
                            "<p>Salut, je m’appelle Prince et je suis charmant. Quelqu’un m’a dit que tu me cherchais?</p>",
                            "<p>-Excuse moi, tu pourrais vider t'es poches?</p><p>- Euhm pourquoi?</p><p>-Jpense que t'as volé mon coeur</p>",
-                           "<p>Ton père est pas violent ou dangereux? Parce que j'ai envie de te violer.</p>",
                            "<p>Hey mademoiselle t'as de belles jambes, elles ouvrent à quelle heure ?</p>",
                            "<p>Et les biches ça ne se promène pas dans les bois normalement ?</p>",
                            "<p>Et les sirènes ça nage pas dans l'océan normalement ?</p>",
@@ -90,8 +89,6 @@ $(document).ready(function() {
     $('.quote').append(quotes[randno]);
     console.log(randno);
 });
-
-
 
 $ ( function ()  { 
     $ ( '.quote' ). css ({ 
