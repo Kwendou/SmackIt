@@ -1,12 +1,9 @@
-$ ( ".selecteur__nav--element" ).click (function (){ 
-    $ ( this ). addClass ( 'selecteur__nav--element--active' ).siblings (). removeClass ( 'selecteur__nav--element--active' ); 
- });
-
 $ ( ".nav__el" ).click (function (){ 
     $ ( this ). addClass ( 'nav__el--active' ).siblings (). removeClass ( 'nav__el--active' ); 
  });
 
 $ ( ".selecteur__nav--element" ).click (function (){ 
+    $ ( this ). addClass ( 'selecteur__nav--element--active' ).siblings (). removeClass ( 'selecteur__nav--element--active' ); 
     $ ( '.nav__el' ). removeClass( 'nav__el--active' ); 
  });
 
@@ -87,6 +84,7 @@ $(document).ready(function() {
                            "<p>Tu serais pas hôtesse de l'air ? Parce que t'as l'air d'avoir quelques heures de vol au compteur.</p>",
                            "<p>Sinon ca va?</p>",
                            "<p>Même pas besoin de choper des bières, tu me fais déjà moussé !</p>",
+                           "<p>Si tu étais jardinier je te donnerais une fleur, mais comme tu es mon âme-soeur je te donne mon coeur.</p>",
                            "<p>Tu savais que tu as 206 os à l’intérieur de ton corps ? Ça te dirait d’en avoir un de plus ?</p>");
     var randno = Math.floor(Math.random()*(quotes.length));
     $('.quote').append(quotes[randno]);
@@ -119,9 +117,3 @@ $ (".nav__el").click(function(){
     $(".challenge").addClass("closePage")
     $(".challenge").removeClass("openPage")
 });
-
-//$(function() {
-//  $(".selecteur__nav--element").click(function() {
-//    $(".quote").load("../_pages/quote.php");
-//  });
-//});
