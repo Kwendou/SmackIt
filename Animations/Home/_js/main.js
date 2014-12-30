@@ -47,6 +47,7 @@ $ (".easy").click(function(){
     $(".header").removeClass("show");
     $(".yolo").removeClass("show");
     $(".hard").removeClass("show");
+    $(".hard").removeClass("resize_hard");
     $(".btn__home").removeClass('btn__home--active');
 });
 
@@ -55,10 +56,8 @@ $ (".hard").click(function(){
     $(".selection").removeClass("show__text");
     $(".header").addClass("hid");
     $(".yolo").addClass("hid");
-    $(".easy").addClass("hid");
     $(".header").removeClass("show");
     $(".yolo").removeClass("show");
-    $(".easy").removeClass("show");
     $(".btn__home").removeClass('btn__home--active');
     $(".hard").addClass("adjust_hard");
     $(".hard").removeClass("resize_hard");
