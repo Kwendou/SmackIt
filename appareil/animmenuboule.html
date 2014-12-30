@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>sous-menu de boulles</title>
+		<meta charset="UTF-8" />
+        <link rel="stylesheet" href="animmenuboule.css">
+        
+	</head>
+    
+<body>
+    
+    <header>  
+    </header>
+    
+    <div class="appareil"></div>
+
+</body>
+   
+   <script src="Jquery.js"></script>
+   <script>
+       
+       var loops = 9*2;
+       function removeAddClass() {
+           $(".appareil").toggleClass("animated");
+           if(--loops > 0)
+                setTimeout(removeAddClass, 1000);
+       
+       console.log(loops);
+       }
+       removeAddClass();
+    
+    </script>
+    
+</html>
