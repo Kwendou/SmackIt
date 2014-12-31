@@ -13,8 +13,16 @@ $ ( ".nav__el--home" ).click (function (){
     $ (".easy").removeClass('hid');
     $ (".hard").addClass('show');
     $ (".hard").removeClass('hid');
-    $ (".hard").addClass('resize_hard');
-    $ (".hard").removeClass('adjust_hard');
+    
+    if ($(".hard").hasClass("adjust_hard")) {
+        $(".hard").addClass("resize_hard");
+        $(".hard").removeClass("adjust_hard");
+    };
+    
+    if ($(".yolo").hasClass("adjust_yolo")) {
+        $(".yolo").addClass("resize_yolo");
+        $(".yolo").removeClass("adjust_yolo");
+    };
  });
 
 $ (".nav__el--challenge").click(function(){
@@ -49,6 +57,10 @@ $ (".easy").click(function(){
     $(".hard").removeClass("show");
     $(".hard").removeClass("resize_hard");
     $(".btn__home").removeClass('btn__home--active');
+    
+    if ($(".yolo").hasClass("resize_yolo")) {
+        $(".yolo").removeClass("resize_yolo");
+    }
 });
 
 $ (".hard").click(function(){
@@ -61,6 +73,21 @@ $ (".hard").click(function(){
     $(".btn__home").removeClass('btn__home--active');
     $(".hard").addClass("adjust_hard");
     $(".hard").removeClass("resize_hard");
+    
+    if ($(".yolo").hasClass("resize_yolo")) {
+        $(".yolo").removeClass("resize_yolo");
+    }
+});
+
+$ (".yolo").click(function(){
+    $(".selection").addClass("hid__text");
+    $(".selection").removeClass("show__text");
+    $(".header").addClass("hid");
+    $(".header").removeClass("show");
+    $(".hard").removeClass("show");
+    $(".btn__home").removeClass('btn__home--active');
+    $(".yolo").addClass("adjust_yolo");
+    $(".yolo").removeClass("resize_yolo");
 });
 
 //jQuery(function(){

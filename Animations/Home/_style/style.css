@@ -19,7 +19,7 @@
     font-size: 35px;
     font-weight: 100;
     text-transform: uppercase;
-    color: #CDCDCA;
+    color: #AFFEFB;
     text-align: center;
     margin-top: 30px;
 }
@@ -29,7 +29,7 @@
     font-size: 10px;
     font-weight: 100;
     text-transform: uppercase;
-    color: #CDCDCA;
+    color: #AFFEFB;
     text-align: center;
     margin-top: 25px;
 }
@@ -48,7 +48,7 @@
 .hard {
     width: 100%;
     height: 66%;/*354px*/
-    background: #DBDBDA;
+    background: #AFFEFB;
     box-shadow: 0px 1px 8px black;
 	border-bottom-left-radius: 50% 26px;
 	border-bottom-right-radius: 50% 26px;
@@ -59,7 +59,7 @@
 .easy {
     width: 100%;
     height: 87%;/*468px*/
-    background: #CBCBCB;
+    background: #AFFEFB;
     box-shadow: 0px 1px 8px black;
 	border-bottom-left-radius: 50% 26px;
 	border-bottom-right-radius: 50% 26px;
@@ -69,14 +69,14 @@
 
 .selection {
     position: absolute;
-    bottom: 2%;
+    bottom: 10%;
     width: 100%;
     text-align: center;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    padding: 45px 0px;
     font-weight: 100;
     font-size: 25px;
     text-transform: uppercase;
+    color: #EE929F;
 }
 
 .nav {
@@ -95,7 +95,7 @@
 }
 
 .nav__el a {
-    padding: 90px 20px 0px 20px;
+    padding: 90px 10px 0px 10px;
     text-decoration: none;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 10px;
@@ -219,4 +219,24 @@
 @-webkit-keyframes resize_hard {
     0% {height: 87%;}
     100% {height: 66%;}
+}
+
+.adjust_yolo {
+    -webkit-animation: adjust_yolo .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes adjust_yolo {
+    0% {height: 43%;}
+    100% {height: 87%;}
+}
+
+.resize_yolo {
+    -webkit-animation: resize_yolo .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes resize_yolo {
+    0% {height: 87%;}
+    100% {height: 43%;}
 }
