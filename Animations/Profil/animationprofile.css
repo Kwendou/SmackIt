@@ -1,0 +1,160 @@
+.container{
+    width: 320px;
+    height: 568px;
+    position: relative;
+    text-align: center;
+}
+
+
+.pseudo{
+    background: #ff0045;
+    position: fixed;
+    width: 320px;
+    height: 493px;
+}
+
+.win{
+    background: #56d62f;
+    position: fixed;
+    right: -100%;
+    width: 320px;
+    height: 493px;
+}
+
+.lost{
+    background: #00baff;
+    position: fixed;
+    right: -200%;
+    width: 320px;
+    height: 493px;
+}
+
+.ideas{
+    background: yellow;
+    position: fixed;
+    right: -300%;
+    width: 320px;
+    height: 493px;
+}
+
+nav{
+    background: pink;
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+}
+
+.plein__unTodeux {
+    -webkit-animation: plein_un_out .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_un_out {
+    0% {margin-left: 4px;}
+    100% {margin-left: 22px;}
+}
+
+.plein__deuxToun {
+    -webkit-animation: plein_un_in .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_un_in {
+    0% {margin-left: 22px;}
+    100% {margin-left: 4px;}
+}
+
+.plein__deuxTotrois {
+    -webkit-animation: plein_deux_out .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_deux_out {
+    0% {margin-left: 22px;}
+    100% {margin-left: 40px;}
+}
+
+.plein__troisTodeux {
+    -webkit-animation: plein_deux_in .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_deux_in {
+    0% {margin-left: 40px;}
+    100% {margin-left: 22px;}
+}
+
+.plein__troisToquatre {
+    -webkit-animation: plein_trois_out .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_trois_out {
+    0% {margin-left: 40px;}
+    100% {margin-left: 58px;}
+}
+
+.plein__qutreTotrois {
+    -webkit-animation: plein_trois_in .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_trois_in {
+    0% {margin-left: 58px;}
+    100% {margin-left: 40px;}
+}
+
+.boules{
+    width: auto;
+    height: 16px;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    margin-left: -36px;
+    bottom: 85px;
+    text-align: center;  
+}
+
+.ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    color: grey;
+    border: 1px solid #000;
+    float: left;
+    margin: 3px;
+    z-index: 3;
+}
+
+
+.plein{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #000;
+    position: fixed;
+    margin: 4px 0px 0px 4px;
+    z-index: 2;
+
+}
+
+.show{
+    -webkit-animation: show .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes show{
+    0%{right: -100%;}
+    100% {right:0%;}
+}
+
+.hide{
+    -webkit-animation: hide 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hide{
+    0%{right: 0%;}
+    100% {right: -100%;}
+}

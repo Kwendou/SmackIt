@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SMACK IT!</title>
+        <link rel="stylesheet" href="animationprofile.css">
+        <link rel="stylesheet" href="reset.css">
+        <meta name="description" content="">
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+       
+        <meta name="mobile-web-app-capable" content="yes">
+    
+    </head>
+    
+    <body>
+    
+    <div class="container">
+       
+        <div class="pseudo"></div>
+        
+        <div class="win"></div>
+        
+        <div class="lost"></div>
+        
+        <div class="ideas"></div>
+        
+        <div class="boules">
+           
+            <div class="ball ball__un"></div>
+            
+            <div class="ball ball__deux"></div>
+            
+            <div class="ball ball__trois"></div>
+            
+            <div class="ball ball__quatre"></div>
+            
+            <div class="plein"></div>
+            
+        </div>
+        
+        <nav>
+        
+        </nav>
+        
+    </div>
+    
+    <script type="text/javascript" src="Jquery.js"></script>
+    
+    <script>
+        
+        $(".ball__un").click(function(){
+            $(".plein").addClass("plein__deuxToun");
+            $(".plein").removeClass("plein__unTodeux");
+            
+            if ($(".plein").hasClass("plein__troisTodeux")) {
+                $(".plein").removeClass("plein__troisTodeux");
+            };
+            
+            if ($(".win").hasClass("show")) {
+                $(".win").removeClass("show");
+                $(".win").addClass("hide");
+            };
+            
+            if ($(".lost").hasClass("show")) {
+                $(".lost").removeClass("show");
+                $(".lost").addClass("hide");
+            };
+            
+            if ($(".ideas").hasClass("show")) {
+                $(".ideas").removeClass("show");
+                $(".ideas").addClass("hide");
+            };
+        });
+        
+        $(".ball__deux").click(function(){
+            $(".win").addClass("show");
+            
+            $(".plein").addClass("plein__unTodeux");
+            $(".plein").removeClass("plein__deuxToun");
+            
+            if ($(".plein").hasClass("plein__deuxTotrois")) {
+                $(".plein").removeClass("plein__deuxTotrois");
+                $(".plein").removeClass("plein__unTodeux");
+                $(".plein").addClass("plein__troisTodeux");
+            };
+                
+            if ($(".win").hasClass("hide")) {
+                $(".win").removeClass("hide");
+            };
+            
+            if ($(".lost").hasClass("show")) {
+                $(".lost").removeClass("show");
+                $(".lost").addClass("hide");
+            };
+            
+            if ($(".ideas").hasClass("show")) {
+                $(".ideas").removeClass("show");
+                $(".ideas").addClass("hide");
+            };
+        });
+        
+        $(".ball__trois").click(function(){
+            $(".lost").addClass("show");
+            $(".plein").addClass("plein__deuxTotrois");
+            $(".plein").removeClass("plein__troisTodeux");
+            $(".plein").removeClass("plein__unTodeux");
+            
+            if ($(".lost").hasClass("hide")) {
+                $(".lost").removeClass("hide");
+            };
+            
+            if ($(".ideas").hasClass("show")) {
+                $(".ideas").removeClass("show");
+                $(".ideas").addClass("hide");
+            };
+        });
+        
+        $(".ball__quatre").click(function(){
+            
+            $(".plein").removeClass("plein__deuxTotrois");
+            $(".plein").addClass("plein__troisToquartre");
+            
+            $(".ideas").addClass("show");
+            
+            if ($(".ideas").hasClass("hide")) {
+                $(".ideas").removeClass("hide");
+                $(".ideas").addClass("show");
+            };
+        });
+        
+        
+    </script>
+    
+    </body>
+    
+</html>
