@@ -80,6 +80,13 @@
             $(".plein").addClass("plein__unTodeux");
             $(".plein").removeClass("plein__deuxToun");
             
+            if ($(".plein").hasClass("plein__quatreTotrois")) {
+                $(".plein").removeClass("plein__quatreTotrois");
+                $(".plein").removeClass("plein__unTodeux");
+                $(".plein").addClass("plein__troisTodeux");
+                
+            };
+            
             if ($(".plein").hasClass("plein__deuxTotrois")) {
                 $(".plein").removeClass("plein__deuxTotrois");
                 $(".plein").removeClass("plein__unTodeux");
@@ -107,6 +114,12 @@
             $(".plein").removeClass("plein__troisTodeux");
             $(".plein").removeClass("plein__unTodeux");
             
+            if ($(".plein").hasClass("plein__troisToquatre")) {
+                $(".plein").removeClass("plein__troisToquatre");
+                $(".plein").removeClass("plein__deuxTotrois");
+                $(".plein").addClass("plein__quatreTotrois");
+            };
+            
             if ($(".lost").hasClass("hide")) {
                 $(".lost").removeClass("hide");
             };
@@ -120,7 +133,7 @@
         $(".ball__quatre").click(function(){
             
             $(".plein").removeClass("plein__deuxTotrois");
-            $(".plein").addClass("plein__troisToquartre");
+            $(".plein").addClass("plein__troisToquatre");
             
             $(".ideas").addClass("show");
             
