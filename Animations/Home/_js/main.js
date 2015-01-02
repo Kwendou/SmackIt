@@ -1,4 +1,21 @@
 $ ( ".nav__el--home" ).click (function (){ 
+    
+    if ($(".hard").hasClass("adjust_hard")) {
+        $(".hard").addClass("resize_hard");
+        $(".hard").removeClass("adjust_hard");    
+    }else {
+        $ (".hard").addClass('show');
+        $ (".hard").removeClass('hid');
+    };
+    
+    if ($(".yolo").hasClass("adjust_yolo")) {
+        $(".yolo").addClass("resize_yolo");
+        $(".yolo").removeClass("adjust_yolo");
+    }else {
+            $ (".yolo").addClass('show');
+            $ (".yolo").removeClass('hid');
+        };
+    
     $ (".btn__home"). addClass ( 'btn__home--active' );
     $ (".btn__challenge").removeClass('btn__challenge--active');
     $ (".btn__players").removeClass('btn__players--active');
@@ -7,22 +24,9 @@ $ ( ".nav__el--home" ).click (function (){
     $ (".selection").removeClass('hid__text');
     $ (".header").addClass('show');
     $ (".header").removeClass('hid');
-    $ (".yolo").addClass('show');
-    $ (".yolo").removeClass('hid');
     $ (".easy").addClass('show');
     $ (".easy").removeClass('hid');
-    $ (".hard").addClass('show');
-    $ (".hard").removeClass('hid');
     
-    if ($(".hard").hasClass("adjust_hard")) {
-        $(".hard").addClass("resize_hard");
-        $(".hard").removeClass("adjust_hard");
-    };
-    
-    if ($(".yolo").hasClass("adjust_yolo")) {
-        $(".yolo").addClass("resize_yolo");
-        $(".yolo").removeClass("adjust_yolo");
-    };
  });
 
 $ (".nav__el--challenge").click(function(){
@@ -73,10 +77,11 @@ $ (".hard").click(function(){
     $(".btn__home").removeClass('btn__home--active');
     $(".hard").addClass("adjust_hard");
     $(".hard").removeClass("resize_hard");
+    $(".hard").removeClass("show");
     
     if ($(".yolo").hasClass("resize_yolo")) {
         $(".yolo").removeClass("resize_yolo");
-    }
+    };
 });
 
 $ (".yolo").click(function(){
@@ -88,6 +93,7 @@ $ (".yolo").click(function(){
     $(".btn__home").removeClass('btn__home--active');
     $(".yolo").addClass("adjust_yolo");
     $(".yolo").removeClass("resize_yolo");
+    $(".yolo").removeClass("show");
 });
 
 //jQuery(function(){
