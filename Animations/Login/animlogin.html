@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Smack it animations des logins !</title>
+        <link rel="stylesheet" href="animlogin.css">
+        <meta name="description" content="">
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+       
+        <meta name="mobile-web-app-capable" content="yes">
+        
+    </head>
+    <body>
+    
+    <p>Veuillez vous connecter ou créer un compte smack-it</p>
+    
+        <div class="bouton"> <a href="#">Se connecter</a></div>
+    
+    <ul>
+        <li class="sociaux"><a href="https://www.facebook.com"><img src="_img/facebook.svg" alt="Facebook"></a></li>
+        <li class="sociaux"><a href="https://twitter.com/"><img src="_img/twitter.svg" alt="Twitter"></a> </li>
+        <li class="sociaux"><a href="https://plus.google.com/"><img src="_img/googleplus.svg" alt="Googleplus"></a> </li>
+    
+    </ul>
+    
+    <p>rien ne sera publié sans vous demander l'autorisation</p>
+    
+    <div class="bouton"> <a href="#">Créer un compte Smack-It</a></div>
+    
+    </body>
+    
+   <script src="Jquery.js"></script>
+   <script>
+       
+       var loops = 1*1;
+       function removeAddClass() {
+           $(".sociaux").toggleClass("animated");
+           if(--loops > 0)
+                setTimeout(removeAddClass, 1000);
+       
+       console.log(loops);
+       }
+       removeAddClass();
+    
+    </script>
+    
+    
+</html>

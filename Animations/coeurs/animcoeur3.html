@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>coeur pulse</title>
+		<meta charset="UTF-8" />
+        <link rel="stylesheet" href="animcoeurbrise.css">
+        
+	</head>
+    
+<body>
+    
+    <div class="coeurbrise"></div>
+
+</body>
+   
+   <script src="Jquery.js"></script>
+   <script>
+       
+       var loops = 9*2;
+       function removeAddClass() {
+           $(".coeurbrise").toggleClass("animated");
+           if(--loops > 0)
+                setTimeout(removeAddClass, 1000);
+       
+       console.log(loops);
+       }
+       removeAddClass();
+    
+    </script>
+    
+</html>

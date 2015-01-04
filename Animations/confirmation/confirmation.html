@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Envoi confirmé animation </title>
+		<meta charset="UTF-8" />
+        <link rel="stylesheet" href="confirmation.css">
+        
+	</head>
+    
+<body>
+    <div class="confirmation"><p>Envoi Confirmé!</p></div>
+    
+</body>
+
+<script src="Jquery.js"></script>
+   <script>
+       
+       var loops = 1*1;
+       function removeAddClass() {
+           $(".confirmation").toggleClass("animated");
+           if(--loops > 0)
+                setTimeout(removeAddClass, 1000);
+       
+       console.log(loops);
+       }
+       removeAddClass();
+    </script>
+</html>
