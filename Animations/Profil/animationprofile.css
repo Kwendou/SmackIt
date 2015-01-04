@@ -10,7 +10,7 @@
     background: #ff0045;
     position: fixed;
     width: 100%;
-    height: 493px;
+    height: 100%;
 }
 
 .win{
@@ -18,7 +18,7 @@
     position: fixed;
     right: -100%;
     width: 100%;
-    height: 493px;
+    height: 100%;
 }
 
 .lost{
@@ -26,7 +26,7 @@
     position: fixed;
     right: -200%;
     width: 100%;
-    height: 493px;
+    height: 100%;
 }
 
 .ideas{
@@ -34,7 +34,7 @@
     position: fixed;
     right: -300%;
     width: 100%;
-    height: 493px;
+    height: 100%;
 }
 
 nav{
