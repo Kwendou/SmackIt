@@ -1,18 +1,43 @@
 $ ( ".nav__el--home" ).click (function (){
+    $(".btn__home").addClass("btn__home--active");
+    $(".btn__challenge").removeClass("btn__challenge--active");
+    $(".btn__profil").removeClass("btn__profil--active");
+    $(".btn__players").removeClass("btn__players--active");
+    
     
  });
 
 $ (".nav__el--challenge").click(function(){
+    $(".btn__challenge").addClass("btn__challenge--active");
+    $(".btn__home").removeClass("btn__home--active");
+    $(".btn__profil").removeClass("btn__profil--active");
+    $(".btn__players").removeClass("btn__players--active");
     
 });
 
 $ (".nav__el--players").click(function(){
+    $(".btn__players").addClass("btn__players--active");
+    $(".btn__home").removeClass("btn__home--active");
+    $(".btn__profil").removeClass("btn__profil--active");
+    $(".btn__challenge").removeClass("btn__challenge--active");
     
 });
 
 $ (".nav__el--profil").click(function(){
+    $(".btn__profil").addClass("btn__profil--active");
+    $(".btn__home").removeClass("btn__home--active");
+    $(".btn__players").removeClass("btn__players--active");
+    $(".btn__challenge").removeClass("btn__challenge--active");
     
 });
+
+$ ( function ()  { 
+    $ ( '.container' ). css ({ 
+        'height'  :  window.screen.height
+    });
+});
+
+
 
 $ (".easy").click(function(){
     

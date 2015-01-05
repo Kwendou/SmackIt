@@ -2,6 +2,11 @@
     "jscodehints.detectedExclusions": [
         "/Users/Antoine/Documents/GitHub/SmackIt/Animations/Selfie_mondiaux/_js/main.js",
         "/Users/Antoine/Documents/GitHub/SmackIt/_jquery_mobile/demos/backbone-requirejs/js/views/CategoryView.js",
-        "/Users/Antoine/Documents/GitHub/SmackIt/Success/_js/Jqueray.js"
+        "/Users/Antoine/Documents/GitHub/SmackIt/Success/_js/Jqueray.js",
+        "/Users/Antoine/Documents/GitHub/SmackIt/Menu/_js/main.js",
+        "/Users/Antoine/Documents/GitHub/SmackIt/signUp/_js/Jqueray.js",
+        "/Users/Antoine/Documents/GitHub/SmackIt/Animations/Home/_js/Jquery.js",
+        "/Users/Antoine/Documents/GitHub/SmackIt/Profil/_js/Jqueray.js",
+        "/Users/Antoine/Documents/GitHub/SmackIt/Players_mondial/_js/Jqueray.js"
     ]
 }

@@ -1,27 +1,25 @@
 .container {
-    width: 320px;
-    height: 548px;
+    width: 100%;
+    height: 100%;
 }
 
 .header {
     width: 100%;
-    height: 126px;
-    background: #AFFEFB;
-    box-shadow: 0px -8px 20px #EE929F;
-	border-bottom-left-radius: 50% 26px;
-	border-bottom-right-radius: 50% 26px;
-    position: absolute;
+    height: 17.3%;
+    background: #D83B1C;
+    position: relative;
+    top: 0;
     z-index: 4;
 }
 
 .header__name {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 100;
     text-transform: uppercase;
-    color: #EE929F;
+    color: #F9DCAC;
     text-align: center;
-    margin-top: 30px;
+    padding-top: 15px;
 }
 
 .header__baseLine {
@@ -29,42 +27,35 @@
     font-size: 10px;
     font-weight: 100;
     text-transform: uppercase;
-    color: #EE929F;
+    color: #F9DCAC;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 18px;
 }
 
-.yolo {
-    width: 100%;
-    height: 43%;/*240px*/
-    background: #fff;
-    box-shadow: 0px -8px 20px black;
-	border-bottom-left-radius: 50% 26px;
-	border-bottom-right-radius: 50% 26px;
-    position: absolute;
-    z-index: 3;
-}
-
-.hard {
-    width: 100%;
-    height: 66%;/*354px*/
-    background: #fff;
-    box-shadow: 0px -8px 20px black;
-	border-bottom-left-radius: 50% 26px;
-	border-bottom-right-radius: 50% 26px;
-    position: absolute;
-    z-index: 2;
+.content {
+    height: 68%;
+    position: relative;
 }
 
 .easy {
     width: 100%;
-    height: 87%;/*468px*/
-    background: #fff;
-    box-shadow: 0px -8px 20px black;
-	border-bottom-left-radius: 50% 26px;
-	border-bottom-right-radius: 50% 26px;
-    position: absolute;
-    z-index: 1;
+    height: 33.3333333%;
+    background: #F9DCAC;
+    position: relative;
+}
+
+.hard {
+    width: 100%;
+    height: 33.3333333%;
+    background: #EFAB7F;
+    position: relative;
+}
+
+.yolo {
+    width: 100%;
+    height: 33.3333333%;
+    background: #E26945;
+    position: relative;
 }
 
 .selection {
@@ -76,12 +67,16 @@
     font-weight: 100;
     font-size: 25px;
     text-transform: uppercase;
-    color: #EE929F;
+    color: #D83B1C;
+}
+
+.yolo>.selection {
+    color: #F9DCAC;
 }
 
 .nav {
-    background: #AFFEFB;
-    height: 110px;
+    background: #F9DCAC;
+    height: 14.6%;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -91,16 +86,16 @@
     float: left;
     width: 25%;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 60px;
 }
 
 .nav__el a {
-    padding: 90px 10px 0px 10px;
+    padding: 70px 10px 0px 10px;
     text-decoration: none;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 10px;
     text-transform: uppercase;
-    color: #EE929F;
+    color: #D83B1C;
 }
 
 .btn__home {
@@ -155,25 +150,6 @@
     -webkit-animation: selection__active .5s ease-in;
 }
 
-@-webkit-keyframes selectionEasy__active {
-    0%(height:)
-}
-
-.hid {
-    -webkit-animation: hidden .5s ease-in;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes hidden {
-    0% {-webkit-transform: translateY(0);}
-    100% {-webkit-transform: translateY(-120%);}
-}
-
-.hid__text {
-    -webkit-animation: hid_text .5s ease-in;
-    -webkit-animation-fill-mode: forwards;
-}
-
 @-webkit-keyframes hid_text {
     0% {opacity: 1;}
     80% {opacity: 0;}
@@ -199,44 +175,4 @@
 @-webkit-keyframes show {
     0% {-webkit-transform: translateY(-120%);}
     100% {-webkit-transform: translateY(0%);}
-}
-
-.adjust_hard {
-    -webkit-animation: adjust_hard .5s ease-in;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes adjust_hard {
-    0% {height: 66%;}
-    100% {height: 87%;}
-}
-
-.resize_hard {
-    -webkit-animation: resize_hard .5s ease-in;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes resize_hard {
-    0% {height: 87%;}
-    100% {height: 66%;}
-}
-
-.adjust_yolo {
-    -webkit-animation: adjust_yolo .5s ease-in;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes adjust_yolo {
-    0% {height: 43%;}
-    100% {height: 87%;}
-}
-
-.resize_yolo {
-    -webkit-animation: resize_yolo .5s ease-in;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes resize_yolo {
-    0% {height: 87%;}
-    100% {height: 43%;}
 }
