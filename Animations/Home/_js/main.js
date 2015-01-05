@@ -1,99 +1,29 @@
-$ ( ".nav__el--home" ).click (function (){ 
-    
-    if ($(".hard").hasClass("adjust_hard")) {
-        $(".hard").addClass("resize_hard");
-        $(".hard").removeClass("adjust_hard");    
-    }else {
-        $ (".hard").addClass('show');
-        $ (".hard").removeClass('hid');
-    };
-    
-    if ($(".yolo").hasClass("adjust_yolo")) {
-        $(".yolo").addClass("resize_yolo");
-        $(".yolo").removeClass("adjust_yolo");
-    }else {
-            $ (".yolo").addClass('show');
-            $ (".yolo").removeClass('hid');
-        };
-    
-    $ (".btn__home"). addClass ( 'btn__home--active' );
-    $ (".btn__challenge").removeClass('btn__challenge--active');
-    $ (".btn__players").removeClass('btn__players--active');
-    $ (".btn__profil").removeClass('btn__profil--active');
-    $ (".selection").addClass('show__text');
-    $ (".selection").removeClass('hid__text');
-    $ (".header").addClass('show');
-    $ (".header").removeClass('hid');
-    $ (".easy").addClass('show');
-    $ (".easy").removeClass('hid');
+$ ( ".nav__el--home" ).click (function (){
     
  });
 
 $ (".nav__el--challenge").click(function(){
-    $ (".btn__challenge"). addClass ( 'btn__challenge--active' );
-    $ (".btn__home").removeClass('btn__home--active');
-    $ (".btn__players").removeClass('btn__players--active');
-    $ (".btn__profil").removeClass('btn__profil--active');
+    
 });
 
 $ (".nav__el--players").click(function(){
-    $ (".btn__players"). addClass ( 'btn__players--active' );
-    $ (".btn__home").removeClass('btn__home--active');
-    $ (".btn__challenge").removeClass('btn__challenge--active');
-    $ (".btn__profil").removeClass('btn__profil--active');
+    
 });
 
 $ (".nav__el--profil").click(function(){
-    $ (".btn__profil"). addClass ( 'btn__profil--active' );
-    $ (".btn__home").removeClass('btn__home--active');
-    $ (".btn__challenge").removeClass('btn__challenge--active');
-    $ (".btn__players").removeClass('btn__players--active');
+    
 });
 
 $ (".easy").click(function(){
-    $(".selection").addClass("hid__text");
-    $(".selection").removeClass("show__text");
-    $(".header").addClass("hid");
-    $(".yolo").addClass("hid");
-    $(".hard").addClass("hid");
-    $(".header").removeClass("show");
-    $(".yolo").removeClass("show");
-    $(".hard").removeClass("show");
-    $(".hard").removeClass("resize_hard");
-    $(".btn__home").removeClass('btn__home--active');
     
-    if ($(".yolo").hasClass("resize_yolo")) {
-        $(".yolo").removeClass("resize_yolo");
-    }
 });
 
 $ (".hard").click(function(){
-    $(".selection").addClass("hid__text");
-    $(".selection").removeClass("show__text");
-    $(".header").addClass("hid");
-    $(".yolo").addClass("hid");
-    $(".header").removeClass("show");
-    $(".yolo").removeClass("show");
-    $(".btn__home").removeClass('btn__home--active');
-    $(".hard").addClass("adjust_hard");
-    $(".hard").removeClass("resize_hard");
-    $(".hard").removeClass("show");
     
-    if ($(".yolo").hasClass("resize_yolo")) {
-        $(".yolo").removeClass("resize_yolo");
-    };
 });
 
 $ (".yolo").click(function(){
-    $(".selection").addClass("hid__text");
-    $(".selection").removeClass("show__text");
-    $(".header").addClass("hid");
-    $(".header").removeClass("show");
-    $(".hard").removeClass("show");
-    $(".btn__home").removeClass('btn__home--active');
-    $(".yolo").addClass("adjust_yolo");
-    $(".yolo").removeClass("resize_yolo");
-    $(".yolo").removeClass("show");
+    
 });
 
 //jQuery(function(){

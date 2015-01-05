@@ -1,5 +1,7 @@
 {
     "jscodehints.detectedExclusions": [
-        "/Users/Antoine/Documents/GitHub/SmackIt/Animations/Selfie_mondiaux/_js/main.js"
+        "/Users/Antoine/Documents/GitHub/SmackIt/Animations/Selfie_mondiaux/_js/main.js",
+        "/Users/Antoine/Documents/GitHub/SmackIt/_jquery_mobile/demos/backbone-requirejs/js/views/CategoryView.js",
+        "/Users/Antoine/Documents/GitHub/SmackIt/Success/_js/Jqueray.js"
     ]
 }
