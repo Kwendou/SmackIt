@@ -1,8 +1,8 @@
-<section class="challenge">
+<section class="challenge_yolo">
 
     <div class="challenge__quote">
 
-        <div class="quote"></div>
+        <div class="quote quote_yolo"></div>
 
     </div>
 

@@ -31,14 +31,6 @@ $ (".nav__el--profil").click(function(){
     
 });
 
-$ ( function ()  { 
-    $ ( '.container' ). css ({ 
-        'height'  :  window.screen.height
-    });
-});
-
-
-
 $ (".easy").click(function(){
     
 });

@@ -1,84 +1,97 @@
-body {
+.container {
     width: 100%;
-    height: 548px;
-    margin: 0 auto;
-    background: #c1c1c1;
-    overflow-y: scroll;
+    height: 100vh;
 }
 
-/** ----- Home ----- **/
-/** ----- Home ----- **/
-/** ----- Home ----- **/
-/** ----- Home ----- **/
-
-
-.home {
-    text-align: center;
-}
+/** ----- Header ----- **/
+/** ----- Header ----- **/
+/** ----- Header ----- **/
+/** ----- Header ----- **/
 
 .header {
-    height: 100px;
-    background: #404040;
-    color: #fff;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    width: 100%;
+    height: 17.3%;
+    background: #ccc;
+    position: relative;
+    top: 0;
+    z-index: 4;
 }
 
-.header__titre {
-    text-transform: uppercase;
-    padding: 10px;
-    font-size: 3em;
+.header__name {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 30px;
     font-weight: 100;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .header__baseLine {
-    text-transform: uppercase;
-    padding-bottom: 5px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 10px;
+    font-weight: 100;
+    color: #000;
+    text-align: center;
+    margin-top: 18px;
 }
 
-.selecteur__nav {
+/** ----- Fin Header ----- **/
+/** ----- Fin Header ----- **/
+/** ----- Fin Header ----- **/
+/** ----- Fin Header ----- **/
+
+
+
+/** ----- Challenge ----- **/
+/** ----- Challenge ----- **/
+/** ----- Challenge ----- **/
+/** ----- Challenge ----- **/
+
+.content {
+    height: 68.5vh;
+    position: relative;
+    z-index: 1;
+}
+
+.easy {
+    width: 100%;
+    height: 33.3333333%;
+    background: #fff;
+    position: relative;
+}
+
+.hard {
+    width: 100%;
+    height: 33.3333333%;
+    background: #fff;
+    position: relative;
+}
+
+.yolo {
+    width: 100%;
+    height: 33.3333333%;
+    background: #fff;
+    position: relative;
+}
+
+.selection {
     position: absolute;
-    top: 59%;
-    left: 45%;
-    margin-top: -147px;
-    margin-left: -133px;
-}
-
-.selecteur__nav--element {
-    padding: 40px 0px;
-}
-
-.selecteur__nav--element:nth-child(1) {
-    padding-top: 0px;
-}
-
-.selecteur__nav--element a {
-    text-decoration: none;
-    padding: 30px 120px;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.2em;
+    top: 50%;
+    margin-top: -15px;
     width: 100%;
-    background: #141414;
-    color: white;
-}
-
-.selecteur__nav--element--active a {
-    text-decoration: none;
-    padding: 30px 120px;
+    text-align: center;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    width: 100%;
-    background: #959595;
-    color: white;
+    font-weight: 100;
+    font-size: 25px;
+    color: #000;
 }
 
 
-/** ----- Fin Home ----- **/
-/** ----- Fin Home ----- **/
-/** ----- Fin Home ----- **/
-/** ----- Fin Home ----- **/
+/** ----- Fin Challenge ----- **/
+/** ----- Fin Challenge ----- **/
+/** ----- Fin Challenge ----- **/
+/** ----- Fin Challenge ----- **/
 
 
 /** ----- Nav ----- **/
@@ -87,36 +100,78 @@ body {
 /** ----- Nav ----- **/
 
 
-.menu {
-    position: fixed;
+
+
+.nav {
+    background: #ccc;
+    height: 14.6%;
+    width: 100%;
+    position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
+    z-index: 1000;
 }
 
 .nav__el {
     float: left;
-    display: block;
-    background: #7b7b7b;
     width: 25%;
-    padding-top: 55px;
-    padding-bottom: 5px;
-    font-size: 10px;
     text-align: center;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
+    padding-top: 60px;
 }
 
 .nav__el a {
+    padding: 70px 10px 0px 10px;
     text-decoration: none;
-    color: #fff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 10px;
+    color: #444;
 }
 
-.nav__el--active {
-    background: #000;
-    color: #fff;
+.btn__home {
+    background: url("../_img/home.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__challenge {
+    background: url("../_img/challenge.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__players {
+    background: url("../_img/players.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__profil {
+    background: url("../_img/profil.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__home--active {
+    background: url("../_img/home_active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__challenge--active {
+    background: url("../_img/challenge_active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__players--active {
+    background: url("../_img/players_active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__profil--active {
+    background: url("../_img/profil_active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /** ----- Fin Nav ----- **/
@@ -125,54 +180,53 @@ body {
 /** ----- Fin Nav ----- **/
 
 
-/** ----- Open/Close page ----- **/
-/** ----- Open/Close page ----- **/
-/** ----- Open/Close page ----- **/
-/** ----- Open/Close page ----- **/
 
-.openPage {
-    -webkit-animation: open .5s linear;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-delay: .3s;
-}
+/** ----- Quotes ----- **/
+/** ----- Quotes ----- **/
+/** ----- Quotes ----- **/
+/** ----- Quotes ----- **/
 
-.closePage {
-    -webkit-animation: close .2s linear;
-    -webkit-animation-fill-mode: forwards;
-}
-
-/** ----- Fin Open/Close page ----- **/
-/** ----- Fin Open/Close page ----- **/
-/** ----- Fin Open/Close page ----- **/
-/** ----- Fin Open/Close page ----- **/
-
-
-/** ----- Challenge choix ----- **/
-/** ----- Challenge choix ----- **/
-/** ----- Challenge choix ----- **/
-/** ----- Challenge choix ----- **/
-
-
-.challenge {
-    height: 100%;
-    background: #c1c1c1; 
+.challenge_easy {
     position: fixed;
-    top: 0;
+    background: #fff;
+    height: 85.8vh;
     width: 100%;
-    box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.62);
-    -webkit-transform : translateX(120%);
+    right: -100%;
+    top: 0;
+}
+
+.challenge_hard {
+    position: fixed;
+    background: #fff;
+    height: 85.8vh;
+    width: 100%;
+    right: -100%;
+    top: 0;
+}
+
+.challenge_yolo {
+    position: fixed;
+    background: #fff;
+    height: 85.8vh;
+    width: 100%;
+    right: -100%;
+    top: 0;
+}
+
+.challenge__active {
+    right: 0;
+    z-index: 10;
 }
 
 .challenge__quote {
-    height: 350px;
+    height: 70vh;
     position: relative;
 }
 
 .quote p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
     padding: 10px;
-    margin-left: -160px;
     width: 300px;
 }
 
@@ -180,9 +234,8 @@ body {
     font-size: 20px;
     position: absolute;
     margin-left: -107.5px;
-    bottom: 130px;
+    bottom: 50px;
     left: 50%;
-    
 }
 
 .challenge__button a {
@@ -198,18 +251,340 @@ body {
     background: #969696;
 }
 
-@-webkit-keyframes open {
-    0% {-webkit-transform: translateX(120%);}
-    100% {-webkit-transform: translateX(0%);}
+/** ----- Fin Quotes ----- **/
+/** ----- Fin Quotes ----- **/
+/** ----- Fin Quotes ----- **/
+/** ----- Fin Quotes ----- **/
+
+
+
+
+/** ----- Profil ----- **/
+/** ----- Profil ----- **/
+/** ----- Profil ----- **/
+/** ----- Profil ----- **/
+
+.profil {
+    height: 68.5vh;
+    width: 100%;
+    position: fixed;
+    bottom: -100%;
+    z-index: 2;
 }
 
-@-webkit-keyframes close {
-    0% {-webkit-transform: translateX(0%);}
-    100% {-webkit-transform: translateX(120%);}
+.profil__active {
+    bottom: 14.6%;
+}
+
+.pseudo{
+    background: #aaa;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.win{
+    background: #eee;
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    bottom: 14.6vh;
+}
+
+.lost{
+    background: #333;
+    position: fixed;
+    right: -200%;
+    width: 100%;
+    height: 100%;
+    bottom: 14.6vh;
+}
+
+.ideas{
+    background: #666;
+    position: fixed;
+    right: -300%;
+    width: 100%;
+    height: 100%;
+    bottom: 14.6vh;
+}
+
+.plein__unTodeux {
+    -webkit-animation: plein_un_out .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_un_out {
+    0% {margin-left: 4px;}
+    100% {margin-left: 22px;}
+}
+
+.plein__deuxToun {
+    -webkit-animation: plein_un_in .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_un_in {
+    0% {margin-left: 22px;}
+    100% {margin-left: 4px;}
+}
+
+.plein__deuxTotrois {
+    -webkit-animation: plein_deux_out .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_deux_out {
+    0% {margin-left: 22px;}
+    100% {margin-left: 40px;}
+}
+
+.plein__troisTodeux {
+    -webkit-animation: plein_deux_in .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_deux_in {
+    0% {margin-left: 40px;}
+    100% {margin-left: 22px;}
+}
+
+.plein__troisToquatre {
+    -webkit-animation: plein_trois_out .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_trois_out {
+    0% {margin-left: 40px;}
+    100% {margin-left: 58px;}
+}
+
+.plein__quatreTotrois {
+    -webkit-animation: plein_trois_in .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes plein_trois_in {
+    0% {margin-left: 58px;}
+    100% {margin-left: 40px;}
+}
+
+.boules{
+    width: auto;
+    height: 16px;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    margin-left: -36px;
+    bottom: 16vh;
+    text-align: center; 
+    display: none;
+}
+
+.boules__active {
+    display: block;
+}
+
+.ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    color: grey;
+    border: 1px solid #000;
+    float: left;
+    margin: 3px;
+    z-index: 3;
 }
 
 
-/** ----- Fin Challenge choix ----- **/
-/** ----- Fin Challenge choix ----- **/
-/** ----- Fin Challenge choix ----- **/
-/** ----- Fin Challenge choix ----- **/
+.plein{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #000;
+    position: fixed;
+    margin: 4px 0px 0px 4px;
+    z-index: 2;
+
+}
+
+.show{
+    -webkit-animation: show .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes show{
+    0%{right: -100%;}
+    100% {right:0%;}
+}
+
+.hide{
+    -webkit-animation: hide 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hide{
+    0%{right: 0%;}
+    100% {right: -100%;}
+}
+
+
+/** ----- Fin Profil ----- **/
+/** ----- Fin Profil ----- **/
+/** ----- Fin Profil ----- **/
+/** ----- Fin Profil ----- **/
+
+
+
+
+/** ----- Selfie Mondiaux ----- **/
+/** ----- Selfie Mondiaux ----- **/
+/** ----- Selfie Mondiaux ----- **/
+/** ----- Selfie Mondiaux ----- **/
+
+.selfieMondiaux {
+    width: 100%;
+    height: 68.5vh;
+    position: fixed;
+    z-index: 6;
+    bottom: -100%;
+}
+
+.selfieMondiaux__active {
+    bottom: 14.6vh;
+    overflow: scroll;
+}
+
+.player {
+    width: 90%;
+    height: 50px;
+    padding: 15px 5%;
+    background: #fff;
+    margin: 0 auto;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    position: relative;
+}
+
+.player:nth-child(even) {
+    background: #aaa;
+}
+
+.pseudo {
+    font-size: 20px;
+    font-weight: 100;
+    background: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.player:nth-child(even)>.pseudo {
+    background: #aaa;
+}
+
+.phrase {
+    width: 55%;
+    font-size: 14px;
+    position: absolute;
+    top: 40px;
+}
+
+.picture {
+    width: 40px;
+    height: 40px;
+    background: grey;
+    position: absolute;
+    top: 45px;
+    margin-top: -20px;
+    right: 25%;
+}
+
+.score {
+    width: 40px;
+    height: 40px;
+    background: grey;
+    position: absolute;
+    top: 45px;
+    margin-top: -20px;
+    right: 5%;
+    border-radius: 20px;
+}
+
+.picture__active {
+    position: absolute;
+    z-index: 1000;
+    
+    -webkit-animation: pictureActive .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.player__active {
+    -webkit-animation: playerActive .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.picture__desactive {
+    position: absolute;
+    z-index: 1000;
+    
+    -webkit-animation: pictureDesactive .5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.player__desactive {
+    -webkit-animation: playerDesactive .5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.score__active {
+    top: 45px;
+}
+
+@-webkit-keyframes playerActive {
+    0% {height: 55px;}
+    100% {height: 400px;}
+}
+
+@-webkit-keyframes playerDesactive {
+    0% {height: 400px;}
+    100% {height: 55px;}
+}
+
+@-webkit-keyframes pictureActive {
+    0% {
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        margin-top: -20px;
+        right: 25%;
+    }
+    
+    100% {
+        width: 200px;
+        height: 300px;
+        margin-top: -120px;
+        top: 50%;
+    }
+}
+
+@-webkit-keyframes pictureDesactive {
+    0% {
+        width: 200px;
+        height: 300px;
+        margin-top: -120px;
+        top: 50%;
+    }
+    
+    100% {
+        width: 40px;
+        height: 40px;
+        top:45px;
+        margin-top: -20px;
+        right: 25%;
+    }
+}
+
+/** ----- Fin Selfie Mondiaux ----- **/
+/** ----- Fin Selfie Mondiaux ----- **/
+/** ----- Fin Selfie Mondiaux ----- **/
+/** ----- Fin Selfie Mondiaux ----- **/

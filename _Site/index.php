@@ -16,12 +16,22 @@
     <body>
       
        <div class="container">
-       
-           <?php include("_pages/menu.php"); ?>
            
            <?php include("_pages/home.php"); ?>
            
            <?php include("_pages/challenge.php"); ?>
+           
+           <?php include("_pages/menu.php"); ?>
+           
+           <?php include("_pages/quote_easy.php"); ?>
+           
+           <?php include("_pages/quote_hard.php"); ?>
+           
+           <?php include("_pages/quote_yolo.php"); ?>
+           
+           <?php include("_pages/profil.php"); ?>
+           
+           <?php include("_pages/selfieMondiaux.php"); ?>
        
        </div>
        

@@ -1,26 +1,4 @@
-.template {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    margin-left: -200px;
-}
-
-.container {
-    width: 320px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 125px;
-    background: #c1c1c1;
-}
-
 /* Phrases*/
-
-.challenge {
-    height: 476px;
-    position: relative;
-    -webkit-animation : in 1s linear;
-    -webkit-animation-delay : .5s;
-}
 
 .challenge__quote {
     height: 350px;
@@ -38,7 +16,7 @@
     font-size: 20px;
     position: absolute;
     margin-left: -107.5px;
-    bottom: 80px;
+    bottom: 150px;
     left: 50%;
     
 }
@@ -54,9 +32,4 @@
 
 .challenge__button--target a {
     background: #969696;
-}
-
-@webkit-keyframes in {
-    0% {-webkit-transform: translateX(100%);}
-    100% {-webkit-transform: translateX(0%);}
 }
