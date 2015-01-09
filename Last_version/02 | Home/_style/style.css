@@ -41,7 +41,7 @@ body {
 
 .jauge__el--remplis {
     height: 11px;
-    width: 30px;
+    width: 0px;
     background: #3effea;
 }
 
@@ -55,12 +55,12 @@ body {
 }
 
 .moins {
-    left: 30px;
+    left: 20px;
 }
 
 .plus {
     background-position: -32px;
-    right: 30px;
+    right: 20px;
     margin-right: 0;
     margin-left: 10px;
 }

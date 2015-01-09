@@ -56,14 +56,14 @@
        
        <script src="_js/Jquery.js"></script>
        
-       <script src="_js/main.js"></script>
-       
        <script>
         
            $(document).ready(function()
             {
                
                $(".random__logo").click(function(){
+                   
+                   $(".random__texte--el").empty();
                    
                     $(".random__texte--el").each(function(){
                      $(this).find("span:eq("+Math.floor(Math.random()*jQuery(this).find("span").length)+")").css("display","inline");
@@ -155,9 +155,21 @@
                         $('.random__texte--el').css ({
                                 'margin-top'  :  - $ ( ".random__texte--el" ). height ()/ 2
                         })
+                        
+                        var x=0, y=0, i=0;
+
+                    while( i++ <= 6) {
+                        x = Math.floor(Math.random() * 200);
+                            $('.jauge__el--remplis').css({
+                                width: x
+                            });
+                   }
                    
             });
-                
+               // window.onload=quotes;
+               
+            
+               
             });
         
         </script>
