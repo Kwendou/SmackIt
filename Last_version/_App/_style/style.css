@@ -1,0 +1,57 @@
+/*---- NAV ----*/
+/*---- NAV ----*/
+/*---- NAV ----*/
+/*---- NAV ----*/
+
+nav {
+    position: fixed;
+    bottom: 0;
+    height: 48px;
+    width: 100%;
+    border-top: 2px solid #2b374a;
+}
+
+.nav__el {
+    width: 80px;
+    height: 50px;
+}
+
+.nav__el {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'raleway_reg';
+    font-size: 12px;
+    padding-top: 32px;
+    padding-bottom: 5px;
+    color: #2b374a;
+    background: url('../_img/bg_no_active.svg');
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    background-color: #3effea;
+}
+
+.active {
+    color: #3effea;
+    background: url('../_img/bg_active.svg');
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    background-color: #2b374a;
+}
+
+.nav__el:nth-child(2) {
+    background-position-x: -80px;
+}
+
+.nav__el:nth-child(3) {
+    background-position-x: -160px;
+}
+
+.nav__el:nth-child(4) {
+    background-position-x: -240px;
+}
+
+/*---- FIN NAV ----*/
+/*---- FIN NAV ----*/
+/*---- FIN NAV ----*/
+/*---- FIN NAV ----*/

@@ -1,0 +1,93 @@
+/*---- HOME ----*/
+/*---- HOME ----*/
+/*---- HOME ----*/
+/*---- HOME ----*/
+
+body {
+    background: url('../_img/palmier.svg');
+}
+
+.jauge {
+    position: absolute;
+    width: 272px;
+    top: 40px;
+    left: 50%;
+    margin-left: -136px;
+}
+
+.jauge__el--coeurbriser {
+    width: 20px;
+    height: 17px;
+    background: url(../_img/coeurs_jauge.svg);
+    display: inline-block;
+    margin-right: 11px;
+}
+
+.jauge__el--coeurplein{
+    width: 20px;
+    height: 17px;
+    background: url(../_img/coeurs_jauge.svg);
+    background-position: -20px;
+    display: inline-block;
+    margin-left: 11px;
+}
+
+.jauge__el--contour {
+    width: 200px;
+    height: 11px;
+    border: 1px solid #fa373a;
+    display: inline-block;
+}
+
+.jauge__el--remplis {
+    height: 11px;
+    width: 30px;
+    background: #3effea;
+}
+
+.random__logo {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    top: 170px;
+    background: url('../_img/swipeLogo.svg');
+    display: inline-block;
+}
+
+.moins {
+    left: 30px;
+}
+
+.plus {
+    background-position: -32px;
+    right: 30px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.random__texte {
+    width: 180px;
+    display: inline-block;
+}
+
+.random {
+    position: fixed;
+    width: 272px;
+    top: 165px;
+    left: 50%;
+    margin-left: -136px;
+}
+
+.random__texte--el {
+    position: fixed;
+    top: 185px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    line-height: 140%;
+}
+
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/
