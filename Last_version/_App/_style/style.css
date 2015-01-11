@@ -1,3 +1,160 @@
+/*---- LOAD ----*/
+/*---- LOAD ----*/
+/*---- LOAD ----*/
+/*---- LOAD ----*/
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo{
+  background: url(../_img/logo_loading.svg);
+  background-size:100%;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 159px;
+  left: 0 auto;
+  right: 0 auto;
+  margin-left: 35px;
+}
+
+.progressBar {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 15px;
+    border: 1px solid red;
+    background: url(../_img/barre_loading.svg);
+    background-repeat: no-repeat;
+    background-position: -190px;
+}
+
+.progressBar_active {
+    -webkit-animation: progressBar 2.5s cubic-bezier(0,.36,.47,.87);
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes progressBar {
+    0% {
+        opacity: 1;
+        background-position: -190px;
+    }
+    
+    80% {
+        opacity: 1;
+        background-position: 0px;
+    }
+    
+    90% {
+        opacity: 1;
+        background-position: 0px;
+    }
+    100% {
+        opacity: 0;
+        background-position: 0px;
+    }
+}
+
+.background{
+  background:#77c8d9;
+  height: 100%;
+  width: 320px;
+  position: fixed;
+  top: 0; 
+  left: 0;
+}
+
+.background__active{
+  -webkit-animation:background .75s ease-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes background {
+  50%, 55% {
+    background: #77c8d9;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+.logo__active{
+  -webkit-animation:chargement .75s ease-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes chargement {
+    
+        20% {
+        -webkit-transform: scale3d(.8, .8, .8);
+                transform: scale3d(.8, .8, .8);
+        }
+
+      50%, 55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+                transform: scale3d(1.2, 1.2, 1.2);
+        }
+
+    55% {
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        top: 159px;
+        left: 0 auto;
+        right: 0 auto;
+        margin-left: 35px;
+
+       -webkit-transform: rotate(-90deg);
+        }
+
+    99% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+                transform: scale3d(1.2, 1.2, 1.2);
+        height: 104px;
+        width: 115px;
+        position: absolute;
+        top: 300px;
+        left: auto;
+        right: 0 auto;
+        margin-left: 20px;
+
+        -webkit-transform: rotate(-360deg);
+        }
+
+    100% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+                transform: scale3d(1.2, 1.2, 1.2);
+        height: 104px;
+          width: 115px;
+          position: absolute;
+          top: 300px;
+          left: auto;
+          right: 0 auto;
+          margin-left: 20px;
+
+          -webkit-transform: rotate(-360deg);
+        }
+}
+
+.loading_hid {
+    display: none;
+}
+
+
+/*---- FIN LOAD ----*/
+/*---- FIN LOAD ----*/
+/*---- FIN LOAD ----*/
+/*---- FIN LOAD ----*/
+
 /*---- NAV ----*/
 /*---- NAV ----*/
 /*---- NAV ----*/
@@ -9,6 +166,7 @@ nav {
     height: 48px;
     width: 100%;
     border-top: 2px solid #2b374a;
+    z-index: 20;
 }
 
 .nav__el {
@@ -28,11 +186,11 @@ nav {
     background: url('../_img/bg_no_active.svg');
     background-repeat: no-repeat;
     background-position-y: 3px;
-    background-color: #3effea;
+    background-color: #77c8d9;
 }
 
 .active {
-    color: #3effea;
+    color: #77c8d9;
     background: url('../_img/bg_active.svg');
     background-repeat: no-repeat;
     background-position-y: 3px;
@@ -55,3 +213,152 @@ nav {
 /*---- FIN NAV ----*/
 /*---- FIN NAV ----*/
 /*---- FIN NAV ----*/
+
+
+
+/*---- HOME ----*/
+/*---- HOME ----*/
+/*---- HOME ----*/
+/*---- HOME ----*/
+
+
+/*---- HOME ----*/
+/*---- HOME ----*/
+/*---- HOME ----*/
+/*---- HOME ----*/
+
+body {
+    background: url('../_img/palmier.svg');
+    background-position: left bottom;
+    background-repeat: repeat-y;
+}
+
+.jauge {
+    position: absolute;
+    width: 280px;
+    text-align: center;
+    top: 40px;
+    left: 50%;
+    margin-left: -140px;
+}
+
+.jauge__el--coeurbriser {
+    width: 20px;
+    height: 17px;
+    background: url(../_img/coeurs_jauge.svg);
+    display: inline-block;
+    margin-right: 11px;
+}
+
+.jauge__el--coeurplein{
+    width: 20px;
+    height: 17px;
+    background: url(../_img/coeurs_jauge.svg);
+    background-position: -20px;
+    display: inline-block;
+    margin-left: 11px;
+}
+
+.jauge__el--contour {
+    width: 200px;
+    height: 11px;
+    border: 1px solid #fa373a;
+    display: inline-block;
+}
+
+.jauge__el--remplis {
+    height: 11px;
+    width: 0px;
+    background: #77c8d9;
+}
+
+.random__logo {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    top: 170px;
+    background: url('../_img/swipeLogo.svg');
+    display: inline-block;
+}
+
+.moins {
+    left: 20px;
+}
+
+.plus {
+    background-position: -32px;
+    right: 20px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.random__texte {
+    width: 180px;
+    display: inline-block;
+}
+
+.random {
+    position: fixed;
+    width: 272px;
+    top: 165px;
+    left: 50%;
+    margin-left: -136px;
+}
+
+.random__texte--el {
+    position: fixed;
+    top: 185px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    line-height: 140%;
+}
+
+.button {
+    height: 110px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 350px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.25);
+}
+
+.button__texte {
+    font-family: "ff-prater-script-web";
+    font-size: 32px;
+    display: inline;
+    padding: 19px 65px;
+    background: #33334a;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    left: 50%;
+    margin-left: -130px;
+}
+
+.button__texte--active {
+    background: #77c8d9;
+}
+
+.button__logo {
+    width: 115px;
+    height: 104px;
+    background: url(../_img/logo.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    z-index: 2;
+}
+
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/
+
+
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/
+/*---- FIN HOME ----*/

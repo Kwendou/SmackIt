@@ -2,7 +2,7 @@
           
           <ul class="nav">
               
-              <li class="nav__el">
+              <li class="nav__el active">
               <p>Accueil</p>
               </li>
               

@@ -12,6 +12,8 @@
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
        
         <meta name="mobile-web-app-capable" content="yes">
+        <script src="//use.typekit.net/gqw2keg.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
         
     </head>
     <body>
@@ -46,31 +48,25 @@
               
               <div class="button__logo"></div>
               
-              <div class="button__texte">
-              <p>Smack it !</p>
-              </div>
+              <p class="button__texte">Smack it !</p>
               
           </div>
           
       </div>
        
        <script src="_js/Jquery.js"></script>
+       <script src="//use.typekit.net/dfe3hiv.js"></script>
+       <script>try{Typekit.load();}catch(e){}</script>
        
        <script>
         
            $(document).ready(function()
             {
                
-               $(".random__logo").click(function(){
+               
+               $(".random__texte--el").empty();
                    
-                   $(".random__texte--el").empty();
-                   
-                    $(".random__texte--el").each(function(){
-                     $(this).find("span:eq("+Math.floor(Math.random()*jQuery(this).find("span").length)+")").css("display","inline");
-                    });
-
-
-                    var quotes = new Array(
+                    var quotes = [
                             "<p>Ton père est un voleur, il a pris toutes les étoiles du ciel, pour les mettre dans tes yeux. </p>",
                            "<p>T'as pas eu mal ?</p> <p>-'Hein?'-</p> <p>Quand tu es tombée du ciel. </p>",
                            "<p>Si t'étais un pirate, ton perroquet, tu le mettrais là, ou là ?</p>",
@@ -142,35 +138,72 @@
                            "<p>Même pas besoin de choper des bières, tu me fais déjà moussé !</p>",
                            "<p>Si tu étais jardinier je te donnerais une fleur, mais comme tu es mon âme-soeur je te donne mon coeur.</p>",
                            "<p>Tu savais que tu as 206 os à l’intérieur de ton corps ? Ça te dirait d’en avoir un de plus ?</p>"
-                        );
-                            
+                    ]
                             var randno = Math.floor(Math.random()*(quotes.length));
                             $('.random__texte--el').append(quotes[randno]);
                
                        $ ( '.random__texte' ). css ({ 
                                 'text-align' : 'center' ,
-                                'font-family' : '"raleway_reg" , "Arial" , sans-serif'
+                                'font-family' : '"raleway_light" , "Arial" , sans-serif',        
+                                'color': '#33334a'
                         });
+                        var hauteur=quotes.length;
+                        
+                        $('.random__texte--el').css ({
+                                'margin-top'  :  - $ ( ".random__texte--el" ). height ()/ 2
+                        });
+                        
+                        var remplir = hauteur/100;
+                        var divremplir = (randno*remplir);
+                            $('.jauge__el--remplis').css({
+                                width: divremplir*"4"
+                            });
+                        
+                        
+                    
+               
+               $(".plus").click(function(){
+                   
+                       randno++;
+                   
+                            $('.random__texte--el').html(quotes[randno]);
                         
                         $('.random__texte--el').css ({
                                 'margin-top'  :  - $ ( ".random__texte--el" ). height ()/ 2
                         })
                         
-                        var x=0, y=0, i=0;
-
-                    while( i++ <= 6) {
-                        x = Math.floor(Math.random() * 200);
+                        var remplir = hauteur/100;
+                        var divremplir = (randno*remplir);
                             $('.jauge__el--remplis').css({
-                                width: x
+                                width: divremplir*"4"
                             });
-                   }
+                        if (randno>hauteur-2) {
+                            randno=-1;
+                        }
+                   console.log(randno);
                    
-            });
-               // window.onload=quotes;
+                });
                
-            
-               
-            });
+               $(".moins").click(function(){
+                   
+                       randno--;
+                   
+                            $('.random__texte--el').html(quotes[randno]);
+                        
+                        $('.random__texte--el').css ({
+                                'margin-top'  :  - $ ( ".random__texte--el" ). height ()/ 2
+                        })
+                        var remplir = hauteur/100;
+                        var divremplir = (randno*remplir);
+                            $('.jauge__el--remplis').css({
+                                width: divremplir*"4"
+                            });
+                   
+                        if (randno<1){
+                            randno = hauteur;
+                        }
+                    });
+               });
         
         </script>
        

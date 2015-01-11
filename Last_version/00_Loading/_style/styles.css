@@ -1,0 +1,129 @@
+.logo{
+  background: url(../_img/logo_loading.svg);
+  background-size:100%;
+    background-repeat: no-repeat;
+
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 159px;
+  left: 0 auto;
+  right: 0 auto;
+  margin-left: 35px;
+}
+
+.progressBar {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 15px;
+    border: 1px solid red;
+    background: url(../_img/barre_loading.svg);
+    background-repeat: no-repeat;
+    background-position: -190px;
+    
+    -webkit-animation: progressBar 1.25s cubic-bezier(0,.36,.47,.87);
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes progressBar {
+    0% {
+        opacity: 1;
+        background-position: -200px;
+    }
+    
+    99% {
+        opacity: 1;
+        background-position: 0px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.background{
+  background:#3effea;
+  height: 568px;
+  width: 320px;
+  position: absolute;
+}
+
+.background__active{
+  -webkit-animation:background .75s ease-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes background {
+  50%, 55% {
+    background: #3effea;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+.logo__active{
+  -webkit-animation:chargement .75s ease-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes chargement {
+    
+        20% {
+        -webkit-transform: scale3d(.8, .8, .8);
+                transform: scale3d(.8, .8, .8);
+        }
+
+      50%, 55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+                transform: scale3d(1.2, 1.2, 1.2);
+        }
+
+    55% {
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        top: 159px;
+        left: 0 auto;
+        right: 0 auto;
+        margin-left: 35px;
+
+       -webkit-transform: rotate(-90deg);
+        }
+
+    99% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+                transform: scale3d(1.2, 1.2, 1.2);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: auto;
+        right: 0 auto;
+        margin-left: 28px;
+
+        -webkit-transform: rotate(-360deg);
+        }
+
+    100% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+                transform: scale3d(1.2, 1.2, 1.2);
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          top: 300px;
+          left: auto;
+          right: 0 auto;
+          margin-left: 28px;
+
+          -webkit-transform: rotate(-360deg);
+        }
+}
+
+.loading_hid {
+    display: none;
+}

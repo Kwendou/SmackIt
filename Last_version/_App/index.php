@@ -13,10 +13,17 @@
        
         <meta name="mobile-web-app-capable" content="yes">
         
+        <script src="//use.typekit.net/gqw2keg.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
     </head>
     <body>
       
       <?php include("_pages/menu.php"); ?>
+      
+      <?php include("_pages/home.php"); ?>
+      
+      <?php include("_pages/load.php"); ?>
        
        <script src="_js/Jquery.js"></script>
        
