@@ -24,6 +24,8 @@
       <?php include("_pages/home.php"); ?>
       
       <?php include("_pages/load.php"); ?>
+      
+      <?php include("_pages/accepted.php"); ?>
        
        <script src="_js/Jquery.js"></script>
        

@@ -63,7 +63,7 @@
 }
 
 .background{
-  background:#77c8d9;
+  background:#33FFFF;
   height: 100%;
   width: 320px;
   position: fixed;
@@ -78,7 +78,7 @@
 
 @-webkit-keyframes background {
   50%, 55% {
-    background: #77c8d9;
+    background: #33FFFF;
   }
 
   100% {
@@ -186,11 +186,11 @@ nav {
     background: url('../_img/bg_no_active.svg');
     background-repeat: no-repeat;
     background-position-y: 3px;
-    background-color: #77c8d9;
+    background-color: #33FFFF;
 }
 
 .active {
-    color: #77c8d9;
+    color: #33FFFF;
     background: url('../_img/bg_active.svg');
     background-repeat: no-repeat;
     background-position-y: 3px;
@@ -269,7 +269,7 @@ body {
 .jauge__el--remplis {
     height: 11px;
     width: 0px;
-    background: #77c8d9;
+    background: #33FFFF;
 }
 
 .random__logo {
@@ -314,7 +314,7 @@ body {
     line-height: 140%;
 }
 
-.button {
+.buttonSmack {
     height: 110px;
     background: #fff;
     width: 100%;
@@ -338,7 +338,8 @@ body {
 }
 
 .button__texte--active {
-    background: #77c8d9;
+    background: #33FFFF;
+    color: #2C374B;
 }
 
 .button__logo {
@@ -358,7 +359,77 @@ body {
 /*---- FIN HOME ----*/
 
 
-/*---- FIN HOME ----*/
-/*---- FIN HOME ----*/
-/*---- FIN HOME ----*/
-/*---- FIN HOME ----*/
+/*---- ACCEPTED ----*/
+/*---- ACCEPTED ----*/
+/*---- ACCEPTED ----*/
+/*---- ACCEPTED ----*/
+
+.buttonChoice {
+    height: 110px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 350px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.25);
+    -webkit-transform: translateX(100%);
+    -webkit-transition: .3s ease-out;
+}
+
+.buttonChoice__show {
+    -webkit-transform: translateX(0%);
+}
+
+.random__logo--hid {
+    display: none;
+}
+
+.buttonSmack__hid{
+    -webkit-transform: translateX(-100%);
+    -webkit-transition: .3s ease-out;
+}
+
+.rate {
+    width: 59px;
+    height: 71px;
+    position: fixed;
+    top: 50%;
+    left: 52px;
+    margin-top: -35.5px;
+    background: url(../_img/coeurs_bouton.svg);
+    background-repeat: no-repeat;
+}
+
+.reussi {
+    width: 59px;
+    height: 71px;
+    position: fixed;
+    top: 50%;
+    right: 52px;
+    margin-top: -35.5px;
+    background: url(../_img/coeurs_bouton.svg);
+    background-repeat: no-repeat;
+    background-position: -59px 0px;
+}
+
+.rate__texte, .reussi__texte {
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'raleway_reg';
+    color: #ff3333;
+}
+
+.arrive {
+    -webkit-animation: arrive .3s cubic-bezier(.01,.82,.4,.58);
+}
+
+@-webkit-keyframes arrive {
+    0%{-webkit-transform:translateX(0px);}
+    30%{-webkit-transform:translateX(-15px);}
+    60%{-webkit-transform:translateX(10px);}
+    100%{-webkit-transform:translateX(0px);}
+}
+
+/*---- FIN ACCEPTED ----*/
+/*---- FIN ACCEPTED ----*/
+/*---- FIN ACCEPTED ----*/
+/*---- FIN ACCEPTED ----*/

@@ -24,7 +24,7 @@
 
       </div>
 
-      <div class="button">
+      <div class="buttonSmack">
 
           <div class="button__logo"></div>
 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Smack it!</title>
+        <link rel="stylesheet" href="_style/reset.css">
+        <link rel="stylesheet" href="_style/style.css">
+        <link rel="stylesheet" href="_style/font.css">
+        <meta name="description" content="">
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+       
+        <meta name="mobile-web-app-capable" content="yes">
+        
+        <script src="//use.typekit.net/gqw2keg.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+    </head>
+    <body>
+      
+        <div class="yourProfil"> 
+
+         <div class="profil__photo"></div>
+
+         <div class="profil__info">
+
+             <p class="pseudo">Kwendoo</p>
+             <p class="mail">kwendoo@rouma.nie</p>
+             <label class="mdp" for="entreNouveau">Changer mot de passe</label>
+
+         </div>
+
+         <div class="profil__connecter">
+
+             <p>Connecter</p>
+             <div class="reseau"></div>
+             <div class="reseau"></div>
+             <div class="reseau"></div>
+
+         </div>
+         
+         <p class="validation">Mot de passe changé, pense à vérifier ta messagerie</p>
+         
+         <div class="popup">
+
+             <div class="profil__nouveauMdP">
+
+                 <input class="entreNouveau" id="entreNouveau" type="password" placeholder="nouveau mot de passe" value="" name="entreNouveau"/>
+                 <button class="changermdp" type="submit">Changer</button> 
+
+             </div>
+         
+         </div>
+
+        </div>
+        
+<!--
+        <div class="profilReussi">
+            
+            <div class="coeur">
+                <p>Réussi</p>
+            </div>
+            
+            <ul class="profil profil__reussi">
+                <li class="profil profil__reussi--el">
+                    
+                    <p>Je ne suis pas chasseur mais je te mettrais bien une cartouche.</p>
+                    <div class="img"></div>
+                    
+                </li>
+                <li class="profil profil__reussi--el">
+                    
+                    <p>Est-ce que tu crois au coup de foudre au premier regard ou je dois repasser ?</p>
+                    <div class="img"></div>
+                    
+                </li>
+                <li class="profil profil__reussi--el">
+                    
+                    <p>Ton père travail a Nintendo si j'en crois ton corp de déesse.</p>
+                    <div class="img"></div>
+                    
+                </li>
+                <li class="profil profil__reussi--el">
+                    
+                    <p>Il y a 3 millard de personne sur cette planète mais je n'ai besoin que de toi.</p>
+                    <div class="img"></div>
+                    
+                </li>
+                <li class="profil profil__reussi--el">
+                    
+                    <p>T'es pas fatiguée a force de trotter dans ma tête?</p>
+                    <div class="img"></div>
+                    
+                </li>
+            </ul>
+            
+            
+            
+        </div>
+-->
+         
+        <div class="boules">
+            <div class="ballFull"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+       
+       <script src="_js/Jquery.js"></script>
+       
+       <script src="_js/main.js"></script>
+       
+       <script>
+
+           
+           
+           $(document).ready(function()
+            {
+            
+               $(".mdp").click(function(){
+                   $(".popup").addClass("popup__show");
+               });
+               
+               $(".changermdp").click(function(){
+                   $(".popup").removeClass("popup__show");
+                   $(".validation").addClass("validation__show");
+                   setTimeout(function(){
+                       $(".validation").removeClass("validation__show");
+                    },2000);
+                   
+               });
+               
+                
+            });
+        
+        </script>
+       
+    </body>
+</html>

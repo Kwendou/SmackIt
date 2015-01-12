@@ -16,7 +16,7 @@ $(document).ready(function()
     },2450);
 
     window.setTimeout(function(){
-//        $(".loading").addClass('loading_hid');
+        $(".loading").addClass('loading_hid');
     },3200);
     
 //FIN LOADING
@@ -197,5 +197,29 @@ $(document).ready(function()
 // FIN HOME
 // FIN HOME
 // FIN HOME
+   
+     
+// Accepted
+// Accepted
+// Accepted
+// Accepted
+   
+    
+   $(".button__texte").click(function(event){
+       var timeout=setTimeout(function(){
+           $(".buttonSmack").addClass('buttonSmack__hid');
+           $(".buttonChoice").addClass('buttonChoice__show');
+           $(".random__logo").addClass('random__logo--hid');
+        },300);
+       var timeout=setTimeout(function(){
+           $(".rate").addClass('arrive');
+           $(".reussi").addClass('arrive');
+       },600);
+   });
+     
+// FIN Accepted
+// FIN Accepted
+// FIN Accepted
+// FIN Accepted
 
     });

@@ -1,0 +1,77 @@
+/*---- ACCEPTED ----*/
+/*---- ACCEPTED ----*/
+/*---- ACCEPTED ----*/
+/*---- ACCEPTED ----*/
+
+body {
+    background: url('../_img/palmier.svg');
+    background-position: left bottom;
+}
+
+.button {
+    height: 110px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 350px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.25);
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+.rate {
+    width: 59px;
+    height: 71px;
+    position: absolute;
+    top: 50%;
+    left: 66px;
+    margin-top: -35.5px;
+    background: url(../_img/coeurs_bouton.svg);
+    background-repeat: no-repeat;
+    -webkit-transform:translateX(500%);
+    -webkit-transition: .3s solid ease-in;
+}
+
+.rate__active {
+    -webkit-animation: rate__show .3s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rate__show {
+    0% {-webkit-transform: translateX(500px);}
+    100% {-webkit-transform: translateX(0px);}
+}
+
+.rate__texte, .reussi__texte {
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'raleway_reg';
+}
+
+.reussi {width: 59px;
+    height: 71px;
+    position: absolute;
+    top: 50%;
+    right: 66px;
+    margin-top: -35.5px;
+    background: url(../_img/coeurs_bouton.svg);
+    background-repeat: no-repeat;
+    -webkit-transform:translateX(300%);
+    -webkit-transition: .3s solid ease-in;
+}
+
+@-webkit-keyframes rate__show {
+    0% {-webkit-transform: translateX(300px);}
+    100% {-webkit-transform: translateX(0px);}
+}
+
+/*---- FIN ACCEPTED ----*/
+/*---- FIN ACCEPTED ----*/
+/*---- FIN ACCEPTED ----*/
+/*---- FIN ACCEPTED ----*/
+
