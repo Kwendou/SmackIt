@@ -1,0 +1,37 @@
+body{
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: #FF3333;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+a:hover{
+    color: #2B374A;
+}
+
+h1{
+    color: #2B374A;
+    font-size: 30px;
+    font-weight: lighter;
+}
+h2{
+    color: #2B374A;
+    font-weight: lighter;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+img{
+    margin-right: 40px;
+}
