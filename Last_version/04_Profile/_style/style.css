@@ -5,6 +5,17 @@
 
 .profil {
     position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform:translateY(-100%);
+    -webkit-translate:all .5s ease-in;
+}
+
+.yourProfil {
+    position: fixed;
+    z-index: 3;
 }
 
 .profil__photo {
@@ -69,7 +80,7 @@
 }
 
 .reseau {
-    margin-top: 25px;
+    margin-top: 33px;
     margin-right: 20px;
     width: 32px;
     height: 32px;
@@ -87,11 +98,11 @@
 }
 
 .boules {
-    z-index: 1000;
+    z-index: 8;
     position: fixed;
     width: 64px;
     height: 12px;
-    bottom: 60px;
+    top: 480px;
     left: 50%;
     margin-left: -32px;
 }
@@ -111,8 +122,9 @@
 }
 
 .ballFull {
-    position: absolute;
-    background: rgba(250,55,58,.75);
+    position: fixed;
+    background: rgba(0,0,0,.75);
+    -webkit-transition: all .5s ease-in;
 }
 
 .popup {
@@ -120,7 +132,7 @@
     height: 100vh;
     background: rgba(43,55,74,.75);
     position: fixed;
-    z-index: 1900;
+    z-index: 9;
     -webkit-transform:translateY(-100%);
     -webkit-transition:all .5s ease-in;
 }
@@ -130,11 +142,11 @@
 }
 
 .profil__nouveauMdP {
-    z-index: 2000;
+    z-index: 10;
     width: 260px;
     height: 200px;
     background: #33334a;
-    top: 50%;
+    top: 30%;
     position: fixed;
     margin-top: -100px;
     left: 50%;
@@ -179,11 +191,303 @@ button.changermdp {
     padding: 9px;
     width: 100%;
     text-align: center;
-    display: none;
+    -webkit-transform:translateY(-100%);
+    -webkit-transition: all .1s ease-in;
 }
 
 .validation__show {
-    display: block;
+    -webkit-transform:translateY(0%);
+}
+
+
+.profilReussi {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 4;
+    -webkit-transform:translateX(100%);
+    -webkit-transition: all .5s ease-in;
+}
+
+.coeur {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    text-align: center;
+    margin:50px 0px;
+}
+
+.coeur>p {
+    padding-top: 70px;
+    position: fixed;
+    width: 71px;
+    left: 50%;
+    margin-left: -35px;
+    font-family: 'raleway_reg';
+    background: url(../_img/coeurs_jauge.svg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    color: #FF3333;
+}
+
+.coeurReussi>p {
+    background-position: right
+        top;
+}
+
+.profil__reussi{
+    height: 280px;
+    overflow: scroll;
+}
+
+.profil__reussi--el {
+    width: 240px;
+    min-height: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: 'raleway_reg';
+    font-size: 12px;
+    border-bottom: 1px solid #33334a;
+}
+
+.profil__reussi--el:last-child {
+    border-bottom: none;
+}
+
+.profil__reussi--el:first-child {
+    margin-top: 0;
+}
+
+.profil__reussi--el>p {
+    width: 175px;
+    margin-bottom: 30px;
+}
+
+.profil__reussi--picture {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    background: url(../_img/picture.svg);
+}
+
+.win1 {
+    background: url(../_img/win_sept.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win2 {
+    background: url(../_img/win_un.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win3 {
+    background: url(../_img/win_trois.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win4 {
+    background: url(../_img/win_quatre.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win5 {
+    background: url(../_img/win_cinq.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win6 {
+    background: url(../_img/win_deux.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win7 {
+    background: url(../_img/win_sex.jpg);
+    width: 240px;
+    height: 0px;
+    background-position: center;
+    -webkit-transition: all .5s ease-in;
+}
+
+
+
+.profilRate {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    z-index: 5;
+    -webkit-transform:translateX(100%);
+    -webkit-transition: all .5s ease-in;
+}
+
+
+.coeurLose>p {
+    background-position: left
+        top;
+}
+
+.profil__rate{
+    height: 280px;
+    overflow: scroll;
+}
+
+.profil__rate--el {
+    width: 240px;
+    min-height: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: 'raleway_reg';
+    font-size: 12px;
+    border-bottom: 1px solid #33334a;
+}
+
+.profil__rate--el:last-child {
+    border-bottom: none;
+}
+
+.profil__rate--el:first-child {
+    margin-top: 0;
+}
+
+.profil__rate--el>p {
+    width: 175px;
+    margin-bottom: 30px;
+}
+
+.profil__rate--picture {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    background: url(../_img/picture.svg);
+}
+
+.lose1 {
+    background: url(../_img/lose_un.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.lose2 {
+    background: url(../_img/lose_un.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.lose3 {
+    background: url(../_img/lose_trois.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.selfie__show {
+    height: 240px;
+    background-position: center;
+}
+
+
+
+.profilcreation {
+    position: fixed;
+    z-index: 6;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    -webkit-transition: all .5s ease-in;
+    -webkit-transform: translateX(100%);
+}
+
+.plus {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    text-align: center;
+    margin:50px 0px;
+}
+
+.plusCreer>p {
+    padding-top: 70px;
+    position: fixed;
+    width: 71px;
+    left: 50%;
+    margin-left: -35px;
+    font-family: 'raleway_reg';
+    background: url(../_img/creation.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 90%;
+    color: #FF3333;
+}
+
+.profil__creer {
+    height: 280px;
+    overflow: scroll;
+}
+
+.profil__creer--el {
+    width: 240px;
+    min-height: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: 'raleway_reg';
+    font-size: 12px;
+    border-bottom: 1px solid #33334a;
+}
+
+.profil__creer--el:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+.show__one--profile {
+    -webkit-transform: translateX(0%);
+}
+
+.next__profile {
+    width: 30px;
+    height: 200px;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+}
+
+.previus__profile {
+    width: 30px;
+    height: 200px;
+    position: fixed;
+    z-index: 1001;
+    right: 0;
+    top: 200px;
 }
 
 /*---- FIN PROFIL ----*/

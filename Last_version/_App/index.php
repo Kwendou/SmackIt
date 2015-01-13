@@ -26,6 +26,8 @@
       <?php include("_pages/load.php"); ?>
       
       <?php include("_pages/accepted.php"); ?>
+      
+      <?php include("_pages/profile.php"); ?>
        
        <script src="_js/Jquery.js"></script>
        

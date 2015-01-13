@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000000;
 }
 
 .logo{
@@ -166,7 +166,7 @@ nav {
     height: 48px;
     width: 100%;
     border-top: 2px solid #2b374a;
-    z-index: 20;
+    z-index: 1000000;
 }
 
 .nav__el {
@@ -433,3 +433,509 @@ body {
 /*---- FIN ACCEPTED ----*/
 /*---- FIN ACCEPTED ----*/
 /*---- FIN ACCEPTED ----*/
+
+
+/*---- PROFIL ----*/
+/*---- PROFIL ----*/
+/*---- PROFIL ----*/
+/*---- PROFIL ----*/
+
+.profil {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform:translateY(-100%);
+    -webkit-transition:all .5s ease-in;
+    z-index: 10000;
+    background: #fff;
+}
+
+.yourProfil {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+.profil__photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid #2B374A;
+    background: #33FFFF;
+    background-image: url(../_img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.profil__info {
+    position: fixed;
+    top: 170px;
+    left: 50%;
+    width: 262px;
+    margin-left: -130px;
+}
+
+.pseudo {
+    font-family: 'raleway_reg';
+    font-size: 20px;
+    text-align: center;
+    line-height: 140%;
+    color: #2B374A;
+}
+
+.mail {
+    font-family: 'raleway_reg';
+    font-size: 16px;
+    text-align: center;
+    line-height: 300%;
+    padding-bottom: 40px;
+    color: #2B374A;
+}
+
+.mdp {
+    font-family: "ff-prater-script-web";
+    font-size: 18px;
+    display: inline;
+    padding: 30px 51px;
+    background: #33334a;
+    color: #fff;
+}
+
+.profil__connecter {
+    width: 160px;
+    font-family: 'raleway_reg';
+    font-size: 16px;
+    position: fixed;
+    top: 370px;
+    text-align: center;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.reseau {
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+    background: url(../_img/social.svg);
+    display: inline-block;
+}
+
+.reseau:nth-child(3) {
+    background-position: -32px;
+}
+
+.reseau:last-child {
+    margin-right: 0px;
+    background-position: -64px;
+}
+
+.boules {
+    z-index: 8;
+    position: fixed;
+    width: 64px;
+    height: 12px;
+    top: 440px;
+    left: 50%;
+    margin-left: -32px;
+}
+
+.ballFull, .ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(250,55,58,1);
+    background: rgba(250,55,58,.5);
+    float: left;
+    margin-right: 5px;
+}
+
+.ball:last-child {
+    margin-right: 0px;
+}
+
+.ballFull {
+    position: fixed;
+    background: rgba(0,0,0,.75);
+    -webkit-transition: all .5s ease-in;
+}
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    background: rgba(43,55,74,.75);
+    position: fixed;
+    z-index: 9;
+    -webkit-transform:translateY(-100%);
+    -webkit-transition:all .5s ease-in;
+}
+
+.popup__show {
+    -webkit-transform:translateY(0%);
+}
+
+.profil__nouveauMdP {
+    z-index: 10;
+    width: 260px;
+    height: 200px;
+    background: #33334a;
+    top: 30%;
+    position: fixed;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -130px;
+}
+
+button.changermdp {
+    width: 150px;
+    height: 50px;
+    font-family: 'ff-prater-script-web';
+    font-size: 25px;
+    color: #33334a;
+    border-radius: 0px;
+    background: #3EFFEA;
+    outline: none;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -75px;
+    border: 0;
+}
+
+.entreNouveau {
+    outline: none;
+    font-family: 'raleway_reg';
+    font-size: 12px;
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    left: 50%; 
+    margin-left: -90px;
+    top: 30px;
+}
+
+.validation {
+    position: fixed;
+    font-family: 'raleway_light';
+    font-size: 10px;
+    color: #FFF;
+    background: #33334a;
+    padding: 9px;
+    width: 100%;
+    text-align: center;
+    -webkit-transform:translateY(-100%);
+    -webkit-transition: all .1s ease-in;
+}
+
+.validation__show {
+    -webkit-transform:translateY(0%);
+}
+
+
+
+
+
+.profilReussi {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 4;
+    -webkit-transform:translateX(100%);
+    -webkit-transition: all .5s ease-in;
+}
+
+.coeur {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    text-align: center;
+    margin:35px 0px;
+}
+
+.coeur>p {
+    padding-top: 70px;
+    position: fixed;
+    width: 71px;
+    left: 50%;
+    margin-left: -35px;
+    font-family: 'raleway_reg';
+    background: url(../_img/coeurs_jauge.svg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    color: #FF3333;
+}
+
+.coeurReussi>p {
+    background-position: right
+        top;
+}
+
+.profil__reussi{
+    height: 270px;
+    overflow: scroll;
+}
+
+.profil__reussi--el {
+    width: 240px;
+    min-height: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: 'raleway_reg';
+    font-size: 12px;
+    border-bottom: 1px solid #33334a;
+}
+
+.profil__reussi--el:last-child {
+    border-bottom: none;
+}
+
+.profil__reussi--el:first-child {
+    margin-top: 0;
+}
+
+.profil__reussi--el>p {
+    width: 175px;
+    margin-bottom: 30px;
+}
+
+.profil__reussi--picture {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    background: url(../_img/picture.svg);
+}
+
+.win1 {
+    background: url(../_img/win_sept.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win2 {
+    background: url(../_img/win_un.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win3 {
+    background: url(../_img/win_trois.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win4 {
+    background: url(../_img/win_quatre.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win5 {
+    background: url(../_img/win_cinq.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win6 {
+    background: url(../_img/win_deux.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.win7 {
+    background: url(../_img/win_sex.jpg);
+    width: 240px;
+    height: 0px;
+    background-position: center;
+    -webkit-transition: all .5s ease-in;
+}
+
+
+
+.profilRate {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    z-index: 5;
+    -webkit-transform:translateX(100%);
+    -webkit-transition: all .5s ease-in;
+}
+
+
+.coeurLose>p {
+    background-position: left
+        top;
+}
+
+.profil__rate{
+    height: 270px;
+    overflow: scroll;
+}
+
+.profil__rate--el {
+    width: 240px;
+    min-height: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: 'raleway_reg';
+    font-size: 12px;
+    border-bottom: 1px solid #33334a;
+}
+
+.profil__rate--el:last-child {
+    border-bottom: none;
+}
+
+.profil__rate--el:first-child {
+    margin-top: 0;
+}
+
+.profil__rate--el>p {
+    width: 175px;
+    margin-bottom: 30px;
+}
+
+.profil__rate--picture {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    background: url(../_img/picture.svg);
+}
+
+.lose1 {
+    background: url(../_img/lose_un.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.lose2 {
+    background: url(../_img/lose_deux.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.lose3 {
+    background: url(../_img/lose_trois.jpg);
+    width: 240px;
+    height: 0px;
+    -webkit-transition: all .5s ease-in;
+}
+
+.selfie__show {
+    height: 240px;
+    background-position: center;
+}
+
+
+
+.profilcreation {
+    position: fixed;
+    z-index: 6;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    -webkit-transition: all .5s ease-in;
+    -webkit-transform: translateX(100%);
+}
+
+.plusCreer {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    text-align: center;
+    margin:35px 0px;
+}
+
+.plusCreer>p {
+    padding-top: 70px;
+    position: fixed;
+    width: 71px;
+    left: 50%;
+    margin-left: -35px;
+    font-family: 'raleway_reg';
+    background: url(../_img/creation.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 90%;
+    color: #FF3333;
+}
+
+.profil__creer {
+    height: 270px;
+    overflow: scroll;
+}
+
+.profil__creer--el {
+    width: 240px;
+    min-height: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: 'raleway_reg';
+    font-size: 12px;
+    border-bottom: 1px solid #33334a;
+}
+
+.profil__creer--el:last-child {
+    border-bottom: none;
+}
+
+.show__one--profile {
+    -webkit-transform: translateX(0%);
+}
+
+.next__profile {
+    width: 30px;
+    height: 200px;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+}
+
+.previus__profile {
+    width: 30px;
+    height: 200px;
+    position: fixed;
+    z-index: 1001;
+    right: 0;
+    top: 200px;
+}
+
+.show__all--profil {
+    -webkit-transform:translateY(0%);
+}
+
+/*---- FIN PROFIL ----*/
+/*---- FIN PROFIL ----*/
+/*---- FIN PROFIL ----*/
+/*---- FIN PROFIL ----*/

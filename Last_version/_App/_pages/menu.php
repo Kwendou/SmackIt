@@ -2,7 +2,7 @@
           
           <ul class="nav">
               
-              <li class="nav__el active">
+              <li class="nav__el active nav__el--accueil">
               <p>Accueil</p>
               </li>
               
@@ -10,11 +10,11 @@
               <p>Challenge</p>
               </li>
               
-              <li class="nav__el">
+              <li class="nav__el nav__el--joueurs">
               <p>Joueurs</p>
               </li>
               
-              <li class="nav__el">
+              <li class="nav__el nav__el--profile">
               <p>Profile</p>
               </li>
               

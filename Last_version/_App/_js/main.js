@@ -35,6 +35,20 @@ $(document).ready(function()
    $('.nav__el').click(function(){
             $(this).addClass('active').siblings().removeClass('active');
        });
+    
+    $('.nav__el--profile').click(function(){
+        $('.profil').addClass("show__all--profil");
+    });
+
+    
+    $('.nav__el--accueil').click(function(){
+        $('.profil').removeClass("show__all--profil");
+    });
+
+    
+    $('.nav__el--joueurs').click(function(){
+        $('.profil').removeClass("show__all--profil");
+    });
 
     
 //FIN MENU
@@ -221,5 +235,112 @@ $(document).ready(function()
 // FIN Accepted
 // FIN Accepted
 // FIN Accepted
+   
+     
+// Profile
+// Profile
+// Profile
+// Profile
+    
+    
+var profile=0;
+               
+            
+       $(".mdp").click(function(){
+           $(".popup").addClass("popup__show");
+       });
+
+       $(".changermdp").click(function(){
+           $(".popup").removeClass("popup__show");
+           setTimeout(function(){
+               $(".validation").addClass("validation__show");
+            },650);
+           setTimeout(function(){
+               $(".validation").removeClass("validation__show");
+            },2650);
+
+       });
+
+       $(".pictureUn").click(function(){
+           $(".win1").toggleClass("selfie__show");
+       });
+
+       $(".pictureDeux").click(function(){
+           $(".win2").toggleClass("selfie__show");
+       });
+
+       $(".pictureTrois").click(function(){
+           $(".win3").toggleClass("selfie__show");
+       });
+
+       $(".pictureQuatre").click(function(){
+           $(".win4").toggleClass("selfie__show");
+       });
+
+       $(".pictureCinq").click(function(){
+           $(".win5").toggleClass("selfie__show");
+       });
+
+       $(".pictureSix").click(function(){
+           $(".win6").toggleClass("selfie__show");
+       });
+
+       $(".pictureSept").click(function(){
+           $(".win7").toggleClass("selfie__show");
+       });
+
+       $(".picturreUn").click(function(){
+           $(".lose1").toggleClass("selfie__show");
+       });
+
+       $(".picturreDeux").click(function(){
+           $(".lose2").toggleClass("selfie__show");
+       });
+
+       $(".picturreTrois").click(function(){
+           $(".lose3").toggleClass("selfie__show");
+       });
+
+
+       $(".next__profile").click(function(){
+           profile++;
+           console.log(profile);
+
+           if (profile==1){
+               $(".profilReussi").addClass("show__one--profile");
+               $(".ballFull").css("webkitTransform", "translateX(17px)");
+
+           } else if (profile==2){
+               $(".profilRate").addClass("show__one--profile");
+               $(".ballFull").css("webkitTransform", "translateX(34px)");
+           } else {
+               $(".profilcreation").addClass("show__one--profile");
+               $(".ballFull").css("webkitTransform", "translateX(51px)");
+           }
+       });
+
+       $(".previus__profile").click(function(){
+           profile--;
+           console.log(profile);
+
+           if (profile==2){
+               $(".profilcreation").removeClass("show__one--profile");
+               $(".ballFull").css("webkitTransform", "translateX(34px)");
+           } else if (profile==1){
+               $(".profilRate").removeClass("show__one--profile");
+               $(".ballFull").css("webkitTransform", "translateX(17px)");
+           } else {
+               $(".profilReussi").removeClass("show__one--profile");
+               $(".ballFull").css("webkitTransform", "translateX(0px)");
+           }
+       });
+    
+
+     
+// FIN Profile
+// FIN Profile
+// FIN Profile
+// FIN Profile
+ 
 
     });
